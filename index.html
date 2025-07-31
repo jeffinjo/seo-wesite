@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- to make the website responsive, we use the viewport meta tag. This tag defines the initial scale and layout size for the viewport. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- set the description -->
-    <meta
-      name="description"
-      content="Learn 10 easy and delicious ways to bake chicken in 2018."
-    />
-    <!-- tell search engines to index the page and follow the page's links -->
-    <meta name="robots" content="index, follow" />
-    <!-- set the author of the page -->
-    <meta name="author" content="Your Name" />
-    <!-- set the keywords for the page -->
-    <meta name="keywords" content="baking, chicken, recipe, easy, 2018" />
-    <!-- set the title of the page -->
-    <title>10 Ways to bake Chicken in 2018</title>
-    <!-- prevent duplicate content or url issues by defining the canonical URL -->
-    <link
-      rel="canonical"
-      href="https://www.example.com/baking/chicken-in-2018"
-    />
-    <!--OPEN GRAPH TAGs: enhance appearance when shared on social media platforms  -->
-    <meta property="og:title" content="10 Ways to bake Chicken in 2018" />
-    <meta
-      property="og:description"
-      content="Learn 10 easy and delicious ways to bake chicken in 2018."
-    />
-    <!-- location optional: -->
-    <meta
-      name="og:url"
-      content="https://www.example.com/baking/chicken-in-2018"
-    />
-    <meta name="og:image" content="path/to/image.jpg" />
-    <!-- styles link -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- external css file for styling -->
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <!--1.to make website dynamic-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--2.set describtion-->
+    <meta name="describtion" content="Discover 10 different ways to make omblette">
+    <!--tell search engine to index the page and follow the page-->
+    <meta name="robots" content="index,follow">
+    <!--prevent duplicate content or url issues by defining URL-->
+    <link rel="canonical" href="https://examples.com/recipies/omblette">
+    <!--enchance appearence when shared in social media-->
+    <meta property="og:title"content="10 ways to make omblette">
+    <meta property="og:describtion"content="Discover 10 different ways to make omblette">
+    <!--location optional feature-->
+    <meta name="geo.region" content="IN-KL">
+    <meta name="geo.placename" content="Trivandrum">
+    <!--styles link-->
+    <link rel="stylesheet" href="css/seowebsite.css">
+
+    <title>10 ways to make omblette</title>
+</head>
+<body>
     <header>
-        <h1>TOP 10 CHICKEN BAKING RECIPES</h1>
+        <h1>10 ways to make omblette</h1>
     </header>
     <section>
-        <h2>1. Herb Roasted Chicken</h2>
-         <img src="images/chicken.webp" alt="Herb roasted chicken in oven tray"> <!--use this alt for optimization -->
-         <p>This classic recipe used rosemary, tyme and garlic for a fragrant and flavorful meal.
-        </p>
-        <a href="recipes.html">check out our chicken recipes</a>
-        <!-- internal link with meaningful anchor text -->
+        <h2>1.caramalised onion egg</h2>
+        <img src="#" alt="image of omblette">
+        <p>This classic recipe caramalizes th onions 1st and is added into the egg before beating it</p>
+        <a href="recipes.html">check out our chicken recipes</a><!--internal link with description-->
+
+        <ol>
+            <li><h2>lkjkjjhh</h2>
+                <img src="#" alt="image of omblette">
+                <p>This classic recipe caramalizes th onions 1st and is added into the egg before beating it</p>
+                <a href="recipes.html">check out our chicken recipes</a>
+            </li>
+        </ol>
     </section>
-  </body>
+    <!--responsive image-->
+    <picture>
+        <source srcset="image/omblette-mobile.jpg" media="(max-width:600px)">
+        <source srcset="image/omblette-desktop.jpg" media="(max-width:601px)">
+        <img src="image/omblette-desktop.jpg" alt="responsive image">
+    </picture>
+    <!--uses different images for mobile and pc for optimal loading time-->
+    <!--Lazy loading vedio-->
+    <video controls preload="none" poster="images/vedio-thumbnail.jpg">
+        <source src="videos/omblette-recipe.mp4" type="video/mp4" >
+        <source src="videos/omblette-recipe.ogg" type="vedio/ogg">
+        your browser doesnot support vedio tag
+    </video>
+    <footer>
+        <p>2025 omblette recipes.all rights reserved</p>
+        <a href="privacy-policy.html">privacy policy</a>
+    </footer>
+</body>
 </html>
